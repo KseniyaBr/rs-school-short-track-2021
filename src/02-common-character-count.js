@@ -5,7 +5,7 @@ function getCommonCharacterCount(s1, s2) {
     let indexArr2 = arr2.findIndex(s => s === char);
     if(indexArr2 >= 0) {
       count++;
-      console.log(arr2.splice(indexArr2, 1));
+      arr2.splice(indexArr2, 1);
     }
   }
   return count;
