@@ -9,7 +9,7 @@
  *
  */
 function getEmailDomain(email) {
-    let shtrud = email.lastIndexOf('@');
+    const shtrud = email.lastIndexOf('@');
     return email.slice(shtrud + 1); 
 }
 
