@@ -11,15 +11,16 @@
  *
  */
 function getSumOfDigits(n) {
-	const firstNum = sumOfDigits(n);
-	if ( firstNum <= 9) {
-		return firstNum;
-	}
-	return sumOfDigits(firstNum);
+  const firstNum = sumOfDigits(n);
+  if ( firstNum <= 9) {
+    return firstNum;
+  }
+  return sumOfDigits(firstNum);
 
-		function sumOfDigits (n) {
-		return n.toString().split('').map(Number).reduce((a, b) => a + b);
-		} 
+  function sumOfDigits (n) {
+    return n.toString().split('').map(Number).reduce(function(a, b) {
+      return a + b});
+  } 
 }
 
 module.exports = getSumOfDigits;
