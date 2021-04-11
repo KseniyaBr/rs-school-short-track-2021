@@ -18,8 +18,12 @@
  */
 
 function removeKFromList(l, k ) {
-  if (l === null) return null;
-  if (l.value === k) return removeKFromList(l.next, k);
+  if (l === null) {
+  	return null;
+  }
+  if (l.value === k) {
+  	return removeKFromList(l.next, k);
+  }
   const result = new ListNode(l.value);
   result.next = removeKFromList(l.next, k);
   return result;
