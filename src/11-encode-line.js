@@ -10,8 +10,8 @@
  */
 function encodeLine(str) {
 
-  let count = 1;
-  let newStr = '';
+  const count = 1;
+  const newStr = '';
   for (let i = 0; i < str.length; i++) {
     if (str[i] === str[i + 1]) {
       count++;
