@@ -13,13 +13,16 @@
  *
  */
 function isMAC48Address(n) {
-	let strArr = n.split('');
-	let len = strArr.map(char => {
-		if (/[0-9A-F-]/.test(char)) {
-			return char
-		}
-	}).join("").length;
-	return len === 17 ? true: false
+  const strArr = n.split('');
+  const len = strArr.map(function(char) {
+    if (/[0-9A-F-]/.test(char)) {
+    return char
+    }
+  }).join("").length;
+  if (len === 17) {
+  	return true;
+  }
+  return false;
 }
 
 module.exports = isMAC48Address;
