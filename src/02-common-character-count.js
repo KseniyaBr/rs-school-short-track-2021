@@ -1,7 +1,7 @@
 function getCommonCharacterCount(s1, s2) {
   let count = 0;
-  const arr2 = str2.split("");
-  for(char of str1) {
+  const arr2 = s2.split("");
+  for(char of s1) {
     let indexArr2 = arr2.findIndex(s => s === char);
     if(indexArr2 >= 0) {
       count++;
