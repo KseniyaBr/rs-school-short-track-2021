@@ -9,14 +9,8 @@
  *
  */
 function getEmailDomain(email) {
-    const revStr = reverseString(email),
-          shtrud = revStr.indexOf('@'),
-          domain = revStr.slice(0,shtrud); 
-    return reverseString(domain);
-  
-	    function reverseString (n) {
-			return n.split("").reverse().join("");
-	    }
+    let shtrud = email.lastIndexOf('@');
+    return email.slice(shtrud + 1); 
 }
 
 module.exports = getEmailDomain;
