@@ -14,9 +14,9 @@
  *
  */
 function renameFiles(names) {
-    const result = names;
+  const result = names;
   for (let i = 0; i < result.length; i++) {
-    let x = 1;
+    const x = 1;
     for (let j = i + 1; j < result.length; j++) {
       if (result[i] === result[j]) {
         result[j] = `${result[j]}(${x++})`;
